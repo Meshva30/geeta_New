@@ -87,7 +87,6 @@ class _shloksState extends State<shloks> {
     double width = MediaQuery.of(context).size.width;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 0),
-
       margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 8),
       decoration: const BoxDecoration(
         color: Color(0xFFFDB316),
