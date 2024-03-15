@@ -10,16 +10,15 @@ import 'package:geeta/screen/spalsh_screen.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-initialRoute: '/',
-routes: {
-
-      '/':(context) => splashscreen(),
-       '/home':(context) => homescreen(),
-       '/Bhagavad':(context) => BhagavadGeeta(),
-       '/shloks':(context) => shloks(),
-       '/saar':(context) => Saar(),
-       '/mahatmay':(context) =>gita_mahatmay(),
-       '/aarti':(context) => gitarti_screen(),
-},
+    initialRoute: '/',
+    routes: {
+      '/': (context) => splashscreen(),
+      '/home': (context) => homescreen(),
+      '/Bhagavad': (context) => BhagavadGeeta(),
+      '/shloks': (context) => shloks(),
+      '/saar': (context) => Saar(),
+      '/mahatmay': (context) => gita_mahatmay(),
+      '/aarti': (context) => gitarti_screen(),
+    },
   ));
 }
