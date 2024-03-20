@@ -909,7 +909,6 @@ class _BhagavadGeetaState extends State<BhagavadGeeta> {
                             child: InkWell(
                               onTap: () {
                                 Index = 16;
-                                Navigator.pushNamed(context, '/shloks');
                               },
                               child: Container(
                                 height: 85,
