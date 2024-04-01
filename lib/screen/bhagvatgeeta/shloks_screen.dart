@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../utils/mahabharatlist.dart';
 
@@ -148,16 +149,24 @@ class _shloksState extends State<shloks> {
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(5),
                     bottomRight: Radius.circular(5))),
-            child: const Row(
+            child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
-                    'Copy',
-                    style: TextStyle(
-                        color: Color(0xFFFDB316),
-                        fontSize: 20,
-                        fontWeight: FontWeight.w600),
-                  ),
+
+                  TextButton(onPressed: () {
+
+                    Clipboard.setData(ClipboardData(text: geetadata[0]['Bhaags'][Index]['shloks'][index]['shlok'],));
+                  }, child: Text('Copy',style: TextStyle(
+                      color: Color(0xFFFDB316),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600),)),
+                  // Text(
+                  //   'Copy',
+                  //   style: TextStyle(
+                  //       color: Color(0xFFFDB316),
+                  //       fontSize: 20,
+                  //       fontWeight: FontWeight.w600),
+                  // ),
                   Text(
                     'Share',
                     style: TextStyle(
